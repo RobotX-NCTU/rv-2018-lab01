@@ -5,7 +5,7 @@
 $ bash lab1_dependency.sh
 ```
 2. Download the code and catkin_make
-'''
+```
 $ bash lab1_file_download.sh
 ```
 if you get error while catkin_make , please bash again
