@@ -4,7 +4,8 @@
 ```
 $ bash lab1_dependency.sh
 ```
-2. Download the code and catkin_make
+2. Download the code and catkin_make</br>
+This script will clone the duckietown and duckiefleet into ~/robotic_vision
 ```
 $ bash lab1_file_download.sh
 ```
