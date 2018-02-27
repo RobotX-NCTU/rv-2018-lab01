@@ -9,7 +9,7 @@ sudo apt-get install -y \
 	ros-kinetic-gazebo-ros-pkgs \
 	ros-kinetic-gazebo-ros-control \
 	ros-kinetic-joint-state-controller \
-	ros-kinetic-joint-velocity-controllers \
+	ros-kinetic-velocity-controllers \
 	ros-kinetic-diff-drive-controller \
 	ros-kinetic-joy \
 	python-frozendict \

@@ -20,8 +20,7 @@ else
 	cd $HOME/robotic_vision/
 	git clone https://github.com/tonycar12002/duckiefleet.git duckiefleet
 fi
-echo "export DUCKIEFLEET_ROOT=$HOME/robotic_vision/duckiefleet/" >> ~/.bashrc
-source ~/.bashrc
+
 
 #duckietown
 file="$HOME/robotic_vision/duckietown"
@@ -47,11 +46,3 @@ fi
 
 cd $HOME/robotic_vision/duckietown/catkin_ws
 catkin_make
-
-
-echo "Create machine"
-cd ../
-source environment.sh
-rosrun duckieteam create-machines
-
-cd $HOME/Desktop/rv-2018-lab01
