@@ -17,7 +17,6 @@ $ echo "export DUCKIEFLEET_ROOT=$HOME/robotic_vision/duckiefleet/" >> ~/.bashrc
 $ source ~/.bashrc
 ```
 4. Create the machines file for duckietown.</br>
-Then,
 ```
 $ bash lab1_create_machines.sh
 ```
