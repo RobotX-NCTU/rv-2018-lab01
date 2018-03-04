@@ -18,7 +18,7 @@ class GazeboJoyMapper(object):
         self.angular = 0 
 
         # Subscriptions
-        self.sub_joy_ = rospy.Subscriber("joy", Joy, self.cbJoy, queue_size=1)
+        self.sub_joy_ = rospy.Subscriber("joy", XXXX, self.cbJoy, queue_size=1)
 
         # Publications
         self.pub_car_twist = rospy.Publisher("/duckiebot_velocity_controller/cmd_vel", Twist, queue_size=1)
@@ -35,21 +35,25 @@ class GazeboJoyMapper(object):
         self.buttonCommand()
 
     def buttonCommand(self):
-        if(self.joy.buttons[0] == 1):
-            print "Hello World"
+        if(self.joy.XXXXXX == XX):
+            do something
 
     def axesCommand(self):
 
-        self.linear = self.joy.axes[7] * self.v_gain
-        self.angular = self.omega_gain * self.joy.axes[6]
+        self.linear = XXXXX * self.v_gain
+        self.angular = XXXXXX * self.omega_gain 
          
     def send_carcmd(self, event):
 
         # define the type of car_twist_msg
-        car_twist_msg = Twist()
+        car_twist_msg = XXXXX
+
+        # Set velocity
         car_twist_msg.linear = Vector3(self.linear, 0.0, 0.0) 
+        # Set omega
         car_twist_msg.angular = Vector3(0, 0, self.angular)
-        self.pub_car_twist.publish(car_twist_msg)
+
+        XXXXXXX # use Publisher to publish the msg
 
 if __name__ == "__main__":
     rospy.init_node("gazebo_joy_mapper",anonymous=False)
