@@ -1,0 +1,4 @@
+<launch>
+	<include file="$(find gazebo_lane_control_node)/launch/opencv_check.launch">
+	</include>
+</launch>

@@ -1,0 +1,8 @@
+<launch>
+	<arg name="pkg_name" value="gazebo_lane_control_node"/>
+	<arg name="node_name" default="opencv_check"/>
+	<node  pkg="$(arg pkg_name)" type="$(arg node_name).py" name="$(arg node_name)" output="screen" clear_params="true" required="true">
+
+	</node>	
+
+</launch>

@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Lab1 gazebo introduction set up "
+echo "gazebo introduction set up "
 
 echo "install dependency"
 
