@@ -8,14 +8,6 @@ This README would normally document whatever steps are necessary to get your app
 * A ros package
 * Virtual lane following in gazebo
 * Clone this repo to duckietown 
-
-### How do I get set up? ###
-
-1. Install some packages about tos, gazebo, python
-```
-$ bash install_dependency.sh
-```
-2. 
  
 ### How to run the code? ###
 
