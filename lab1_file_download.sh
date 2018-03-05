@@ -29,9 +29,9 @@ then
 	echo "$file already exist"
 else
 	echo "Clone $file"
-	mv rv-2018-lab01/ $HOME/duckietown/catkin_ws/src/
+	mv $HOME/rv-2018-lab01/ $HOME/duckietown/catkin_ws/src/
 fi
-cd $HOME/duckietown/
+cd $HOME/duckietown/catkin_ws/src/rv-2018-lab01/
 bash install_dependency.sh
 
 cd $HOME/duckietown/catkin_ws
