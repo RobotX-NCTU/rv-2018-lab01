@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo rm -rf /var/lib/dpkg/lock
 #duckiefleet
 file="$HOME/duckiefleet"
 if [ -d "$file" ]
