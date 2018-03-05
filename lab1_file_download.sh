@@ -1,48 +1,38 @@
 #!/bin/bash
 
-file="$HOME/robotic_vision"
-#rv folder
-if [ -d "$file" ]
-then
-	echo "$file already exist"
-else
-	echo "create $file."
-	mkdir $HOME/robotic_vision
-fi
-
 #duckiefleet
-file="$HOME/robotic_vision/duckiefleet"
+file="$HOME/duckiefleet"
 if [ -d "$file" ]
 then
 	echo "$file already exist"
 else
 	echo "Clone $file"
-	cd $HOME/robotic_vision/
+	cd 
 	git clone https://github.com/tonycar12002/duckiefleet.git duckiefleet
 fi
 
-
 #duckietown
-file="$HOME/robotic_vision/duckietown"
+file="$HOME/duckietown"
 if [ -d "$file" ]
 then
 	echo "$file already exist"
 else
 	echo "Clone $file"
-	cd $HOME/robotic_vision/
+	cd 
 	git clone https://github.com/duckietown/Software.git duckietown
 fi
 
 #virtual lane following
-file="$HOME/robotic_vision/duckietown/catkin_ws/src/virtual_lane_following"
+file="$HOME/duckietown/catkin_ws/src/rv-2018-lab01"
 if [ -d "$file" ]
 then
 	echo "$file already exist"
 else
 	echo "Clone $file"
-	cd $HOME/robotic_vision/duckietown/catkin_ws/src/
-	git clone https://github.com/tonycar12002/virtual_lane_following.git
+	mv rv-2018-lab01/ $HOME/duckietown/catkin_ws/src/
 fi
+cd $HOME/duckietown/
+bash install_dependency.sh
 
-cd $HOME/robotic_vision/duckietown/catkin_ws
+cd $HOME/duckietown/catkin_ws
 catkin_make
